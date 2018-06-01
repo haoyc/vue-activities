@@ -15,7 +15,7 @@
       <img class="slid6-img3" src="../../../static/img/05_y.png" alt="">
     </div>
     <div class="slid6-say ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3">
-      <img class="slid6-img3" src="../../../static/img/05_b.png" alt="">    
+      <img class="slid6-img3 img3-hg" src="../../../static/img/05_b.png" alt="">    
       <div class="slid6-name">
         <img class="slid6-img2" src="../../../static/img/m_02.png" alt="">
         <div>HR</div>
@@ -73,6 +73,8 @@ export default {
       width 534px
       height 146px
       margin-left 10px
+    .img3-hg
+      height 176px
   .slid6-p3
     margin 60px auto 
     width 640px
