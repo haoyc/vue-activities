@@ -55,14 +55,23 @@ exports.cssLoaders = function (options) {
   }
 
   // https://vue-loader.vuejs.org/en/configurations/extract-css.html
+  var stylusOptions = {
+    import: [
+      path.join(__dirname, "../static/styls/index.styl"), // variables.styl全局变量文件
+    ],
+    paths: [
+      path.join(__dirname, "../static/styls/"),
+      path.join(__dirname, "../"),
+    ],
+  }
   return {
     css: generateLoaders(),
     postcss: generateLoaders(),
     less: generateLoaders('less'),
     sass: generateLoaders('sass', { indentedSyntax: true }),
     scss: generateLoaders('sass'),
-    stylus: generateLoaders('stylus'),
-    styl: generateLoaders('stylus')
+    stylus: generateLoaders('stylus', stylusOptions),
+    styl: generateLoaders('stylus', stylusOptions)
   }
 }
 
