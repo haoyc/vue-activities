@@ -11,6 +11,10 @@
       <swiper-slide4></swiper-slide4>
       <swiper-slide5></swiper-slide5>
       <swiper-slide6></swiper-slide6>
+      <swiper-slide7></swiper-slide7>
+      <swiper-slide8></swiper-slide8>
+      <swiper-slide9></swiper-slide9>
+      <swiper-slide10></swiper-slide10>
       <swiper-slide11></swiper-slide11>
       
       <!-- Optional controls -->
@@ -24,7 +28,7 @@
 
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
-import {  swiperSlide1, swiperSlide2, swiperSlide3, swiperSlide4, swiperSlide5, swiperSlide6,  swiperSlide11} from './../components/swipers/index'
+import {  swiperSlide1, swiperSlide2, swiperSlide3, swiperSlide4, swiperSlide5, swiperSlide6, swiperSlide7, swiperSlide8, swiperSlide9,swiperSlide10,swiperSlide11} from './../components/swipers/index'
 import 'script-loader!../assets/js/swiper.animate1.0.3.min'
 export default {
   name: 'ciicActive',
@@ -36,6 +40,10 @@ export default {
     swiperSlide4,
     swiperSlide5,
     swiperSlide6,
+    swiperSlide7,
+    swiperSlide8,
+    swiperSlide9,
+    swiperSlide10,
     swiperSlide11
   },
   data () {
@@ -93,12 +101,12 @@ export default {
       100%
         transform:rotate(360deg);
   .music-icon
-    background:#8f8e8e url('static/img/music-icon.png') center center no-repeat;
+    background:rgba(#000,0.2) url('static/img/music-icon.png') center center no-repeat;
     background-size: 60% 60%;
     position:absolute;
     overflow:hidden;
-    right:10px;
-    top:10px;
+    right:40px;
+    top:40px;
     width: 60px;
     height: 60px;
     display: block;
